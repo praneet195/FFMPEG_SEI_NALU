@@ -33,7 +33,18 @@ Run the script python3seiextractor.sh to get the Shared Object that can be impor
 
 However, the shared object files created return a frame and an SEI Marker associated with that particular frame. Thus, it is necessary to follow the tutorials in https://github.com/praneet195/NUMPY-OPENCV-CONVERTER to convert a CV:MAT object into a NUMPY Python array.
 
-A sample Python Script has been provided to extarct frames with respective SEI in the extractor folder.
+A sample Python Script has been provided to extract frames with respective SEI in the extractor folder.
+
+The following functions are available in the SEINalExtractor module for python:
+* extract_frame_with_sei() : Involves the main code that updates the MAT object and SEI being returned. Return value is frame number being processed.
+* getMAT() : Returns a frame as CV:MAT object which cv2 converts to numpy array
+* getSEI(): Gets SEI value associated with a particular frame. Returns an empty string if no SEI is found.
+* get_current_frame_number(): Returns the current frame number. <br/>
+
+The following steps are required to use the functions in the module:
+                       obj=SEINalExtractor.FMV(2, stream_link/video_path)
+                       obj.connect(True)
+                       Now obj can access required functions.
 
 
 _______________________________________________________________________________________________________________________________
