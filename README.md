@@ -41,10 +41,10 @@ The following functions are available in the SEINalExtractor module for python:
 * getSEI(): Gets SEI value associated with a particular frame. Returns an empty string if no SEI is found.
 * get_current_frame_number(): Returns the current frame number. <br/>
 
-The following steps are required to use the functions in the module:
-                       obj=SEINalExtractor.FMV(2, stream_link/video_path)
-                       obj.connect(True)
-                       Now obj can access required functions.
+The following steps are required to use the functions in the module:<br/>
+  *                     obj=SEINalExtractor.FMV(2, stream_link/video_path)
+  *                     obj.connect(True)
+  *                     Now obj can access required functions.
 
 
 _______________________________________________________________________________________________________________________________
@@ -54,4 +54,5 @@ ________________________________________________________________________________
 * Create a lighter build of FFMPEG as this method is applicable only for H.264 codec. All unnecesary codecs can be removed.
 * Need to add custom flags to FFMPEG cli to allow for the selection of Iframe or both iFrame and Pframe options.
 * Also need to add flags to allow markers to be published separately by zmq.
+* Expose more functions that can be used from FFMPEG.
 
