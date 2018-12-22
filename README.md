@@ -33,6 +33,8 @@ Run the script python3seiextractor.sh to get the Shared Object that can be impor
 
 However, the shared object files created return a frame and an SEI Marker associated with that particular frame. Thus, it is necessary to follow the tutorials in https://github.com/praneet195/NUMPY-OPENCV-CONVERTER to convert a CV:MAT object into a NUMPY Python array.
 
+A sample Python Script has been provided to extarct frames with respective SEI in the extractor folder.
+
 
 _______________________________________________________________________________________________________________________________
 
